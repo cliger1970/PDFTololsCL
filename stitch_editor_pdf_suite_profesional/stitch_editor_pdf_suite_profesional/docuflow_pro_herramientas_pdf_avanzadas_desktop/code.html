@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container":"#171f33","primary-fixed":"#dbe1ff","error-container":"#93000a","on-secondary-fixed":"#25005a","surface-variant":"#2d3449","surface-bright":"#31394d","surface-container-low":"#131b2e","on-tertiary-fixed-variant":"#653e00","inverse-on-surface":"#283044","on-tertiary-container":"#ffeedd","background":"#0b1326","on-secondary-fixed-variant":"#5a00c6","surface-container-lowest":"#060e20","primary-fixed-dim":"#b4c5ff","inverse-primary":"#0053db","secondary-container":"#6001d1","primary":"#b4c5ff","inverse-surface":"#dae2fd","on-secondary":"#3f008e","on-background":"#dae2fd","surface-dim":"#0b1326","tertiary":"#ffb95f","secondary-fixed-dim":"#d2bbff","tertiary-container":"#996100","surface-container-high":"#222a3d","secondary":"#d2bbff","on-surface":"#dae2fd","on-tertiary-fixed":"#2a1700","surface-tint":"#b4c5ff","on-error":"#690005","on-primary":"#002a78","tertiary-fixed":"#ffddb8","error":"#ffb4ab","secondary-fixed":"#eaddff","on-secondary-container":"#c9aeff","tertiary-fixed-dim":"#ffb95f","surface-container-highest":"#2d3449","on-primary-fixed-variant":"#003ea8","on-error-container":"#ffdad6","on-tertiary":"#472a00","on-primary-fixed":"#00174b","outline-variant":"#434655","outline":"#8d90a0","primary-container":"#2563eb","surface":"#0b1326","on-primary-container":"#eeefff","on-surface-variant":"#c3c6d7"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"0.75rem","gutter-tablet":"1rem","space-md":"0.75rem","space-xl":"1.5rem","space-lg":"1rem","margin-tablet":"1.5rem","margin":"1rem","space-xs":"0.25rem","space-sm":"0.5rem"},"fontFamily":{"body-sm":["Inter"],"body-lg":["Inter"],"headline-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"label-lg":["Inter"],"label-sm":["Inter"],"caption":["Inter"],"body-md":["Inter"],"headline-md":["Plus Jakarta Sans"],"label-md":["Inter"]},"fontSize":{"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"display-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"500"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"600"}],"caption":["10px",{"lineHeight":"12px","letterSpacing":"0.04em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}]}}}};</script></head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased select-none"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.3)]"><div class="h-14 px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md min-w-[260px]"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-container shadow-[0_2px_8px_rgba(0,0,0,0.4)]"><span class="material-symbols-outlined text-[20px]">description</span></div><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-bold">DocuFlow<span class="text-primary font-normal ml-0.5">Pro</span></span></div><span class="px-space-xs py-0.5 rounded bg-surface-variant text-on-surface-variant font-caption text-caption uppercase tracking-wider font-semibold">Enterprise v4.2</span><div class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px] text-primary">cloud_done</span><span>Sincronizado</span></div></div><div class="flex-1 max-w-xl"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px] pointer-events-none">search</span><input class="w-full h-9 pl-9 pr-14 rounded-lg bg-surface-container-highest text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm outline-none focus:ring-1 focus:ring-primary shadow-inner" placeholder="Buscar herramientas, textos, comandos... (Alt+Q)" type="text"/><kbd class="absolute right-3 px-1.5 py-0.5 rounded bg-surface-variant font-caption text-caption text-on-surface-variant">Alt+Q</kbd></div></div><div class="flex items-center gap-space-sm min-w-[260px] justify-end"><div class="flex items-center bg-surface-container rounded-lg p-0.5"><button class="w-7 h-7 flex items-center justify-center rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-variant transition-colors" title="Deshacer"><span class="material-symbols-outlined text-[18px]">undo</span></button><button class="w-7 h-7 flex items-center justify-center rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-variant transition-colors" title="Rehacer"><span class="material-symbols-outlined text-[18px]">redo</span></button></div><button class="w-8 h-8 flex items-center justify-center rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-variant transition-colors" title="Alternar tema"><span class="material-symbols-outlined text-[18px]">dark_mode</span></button><button class="flex items-center gap-1.5 h-8 px-space-md rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md hover:bg-primary-container/90 transition-colors shadow-sm"><span class="material-symbols-outlined text-[16px]">ios_share</span><span>Exportar</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><nav class="h-10 px-margin flex items-center gap-space-xs bg-surface-container-lowest overflow-x-auto shadow-[0_1px_4px_rgba(0,0,0,0.2)]" data-active-classes="bg-surface-container-highest text-primary font-semibold border-b-2 border-primary"><a class="px-space-md h-full flex items-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="editor-de-documento" href="#">Inicio</a><a class="px-space-md h-full flex items-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="insertar" href="#">Insertar</a><a class="px-space-md h-full flex items-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="dibujar-y-formas" href="#">Dibujar y Formas</a><a aria-current="page" class="px-space-md h-full flex items-center transition-colors whitespace-nowrap bg-surface-container-highest text-primary font-semibold border-b-2 border-primary" data-path="herramientas-pdf" href="#">Organizar &amp; Herramientas PDF</a><a class="px-space-md h-full flex items-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="conversor-a-word" href="#">Conversor &amp; Exportar</a><a class="px-space-md h-full flex items-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="revision" href="#">Revisión</a><a class="px-space-md h-full flex items-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="vista" href="#">Vista</a></nav></header><aside class="fixed left-0 top-24 bottom-7 w-64 bg-surface-container-low z-40 flex flex-col p-space-sm shadow-[1px_0_8px_rgba(0,0,0,0.25)]"><div class="px-space-md py-space-sm font-label-sm text-label-sm uppercase tracking-wider text-outline">Espacio de Trabajo</div><nav class="flex-1 flex flex-col gap-1 overflow-y-auto" data-active-classes="bg-surface-container-high text-primary font-semibold"><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="editor-de-documento" href="#"><span class="material-symbols-outlined text-[20px]">edit_document</span><span class="font-label-md text-label-md truncate">Editor de Documento</span></a><a aria-current="page" class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg transition-all bg-surface-container-high text-primary font-semibold" data-path="herramientas-pdf" href="#"><span class="material-symbols-outlined text-[20px]">splitscreen</span><span class="font-label-md text-label-md truncate">Herramientas PDF</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="conversor-a-word" href="#"><span class="material-symbols-outlined text-[20px]">transform</span><span class="font-label-md text-label-md truncate">Conversor Multi-formato</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="miniaturas-y-esquema" href="#"><span class="material-symbols-outlined text-[20px]">view_sidebar</span><span class="font-label-md text-label-md truncate">Miniaturas y Esquema</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="biblioteca-de-recursos" href="#"><span class="material-symbols-outlined text-[20px]">folder_copy</span><span class="font-label-md text-label-md truncate">Biblioteca de Recursos</span></a></nav><div class="mt-auto p-space-sm bg-surface-container rounded-lg flex items-center justify-between text-on-surface-variant"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-tertiary">shield_lock</span><span class="font-caption text-caption">Sandbox Aislado</span></div><span class="font-caption text-caption uppercase text-outline">WASM</span></div></aside><div class="pl-64"><main class="relative pt-24 pb-7 min-h-screen bg-surface w-full px-margin"><div class="flex flex-col w-full gap-space-lg pb-12">
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md pt-2">
+<div>
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-wider mb-1">
+<span class="material-symbols-outlined text-[16px]">build_circle</span>
+<span>Herramientas PDF de Grado Corporativo</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Suite de Procesamiento y Ensamblaje PDF</h1>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-high p-1 rounded-xl shadow-inner">
+<button class="suite-tab flex items-center gap-1.5 px-space-md py-2 rounded-lg font-label-md text-label-md transition-all bg-primary-container text-on-primary-container shadow-sm" id="tab-compress" onclick="switchSuiteTab('compress')">
+<span class="material-symbols-outlined text-[18px]">compress</span>
+<span>Compresión &amp; Optimización</span>
+</button>
+<button class="suite-tab flex items-center gap-1.5 px-space-md py-2 rounded-lg font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-variant" id="tab-merge" onclick="switchSuiteTab('merge')">
+<span class="material-symbols-outlined text-[18px]">call_merge</span>
+<span>Unificar Archivos (Merge)</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-variant text-on-surface text-caption font-caption">3</span>
+</button>
+<button class="suite-tab flex items-center gap-1.5 px-space-md py-2 rounded-lg font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-variant" id="tab-split" onclick="switchSuiteTab('split')">
+<span class="material-symbols-outlined text-[18px]">call_split</span>
+<span>Divisor &amp; Extracción (Split)</span>
+</button>
+</div>
+</div>
+<div class="suite-panel grid grid-cols-1 lg:grid-cols-12 gap-space-lg" id="panel-compress">
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<div class="bg-surface-container rounded-xl p-space-lg shadow-md relative overflow-hidden">
+<div class="absolute -right-8 -bottom-8 w-44 h-44 rounded-full bg-primary/5 pointer-events-none blur-2xl"></div>
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-14 h-16 rounded-lg bg-surface-container-high flex flex-col items-center justify-center p-2 relative shadow-inner shrink-0">
+<span class="material-symbols-outlined text-primary text-[28px]">picture_as_pdf</span>
+<span class="font-caption text-caption text-primary tracking-widest font-bold">PDF</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Reporte_Financiero_Anual_Q4.pdf</h3>
+<span class="px-2 py-0.5 rounded bg-primary-container/30 text-primary font-caption text-caption font-semibold">AES-256</span>
+</div>
+<div class="flex items-center gap-space-md text-on-surface-variant font-body-sm text-body-sm mt-1 flex-wrap">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">storage</span> 18.4 MB</span>
+<span>•</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">menu_book</span> 38 páginas</span>
+<span>•</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">palette</span> Vectorial sRGB</span>
+</div>
+</div>
+</div>
+<button class="flex items-center gap-1 px-space-md py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-md text-label-md transition-colors shrink-0">
+<span class="material-symbols-outlined text-[16px]">swap_horiz</span>
+<span>Cambiar archivo</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Perfil de Motor de Compresión</span>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="preset-card cursor-pointer bg-surface-container-low hover:bg-surface-container p-space-lg rounded-xl transition-all shadow-sm flex flex-col justify-between" id="preset-extreme" onclick="selectCompressionPreset('extreme')">
+<div>
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-surface-variant text-on-surface-variant font-caption text-caption uppercase tracking-wider font-semibold">Máxima Reducción</span>
+<div class="preset-check w-5 h-5 rounded-full bg-surface-variant flex items-center justify-center text-transparent">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-3">Extrema (-85%)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">72 DPI raster. Ideal para transferencias por mensajería móvil o correos con cuota estricta.</p>
+</div>
+<div class="mt-6 pt-3 bg-surface-container-lowest/50 rounded-lg p-2.5">
+<div class="flex items-baseline justify-between">
+<span class="font-caption text-caption text-on-surface-variant">Peso Estimado:</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">~2.8 MB</span>
+</div>
+<div class="w-full bg-surface-variant h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 15%"></div>
+</div>
+</div>
+</div>
+<div class="preset-card cursor-pointer bg-surface-container p-space-lg rounded-xl transition-all shadow-md flex flex-col justify-between relative ring-2 ring-primary-container" id="preset-recommended" onclick="selectCompressionPreset('recommended')">
+<div class="absolute -top-2.5 left-1/2 -translate-x-1/2 bg-primary-container text-on-primary-container px-2.5 py-0.5 rounded-full font-caption text-caption uppercase font-bold tracking-wider shadow">
+              Recomendado
+            </div>
+<div>
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-primary-container/20 text-primary font-caption text-caption uppercase tracking-wider font-semibold">Equilibrio Óptimo</span>
+<div class="preset-check w-5 h-5 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-3">Recomendada (-65%)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">150 DPI nítido. Preserva legibilidad de tablas, firmas vectoriales y balances contables corporativos.</p>
+</div>
+<div class="mt-6 pt-3 bg-surface-container-lowest/50 rounded-lg p-2.5">
+<div class="flex items-baseline justify-between">
+<span class="font-caption text-caption text-on-surface-variant">Peso Estimado:</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">~6.4 MB</span>
+</div>
+<div class="w-full bg-surface-variant h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 35%"></div>
+</div>
+</div>
+</div>
+<div class="preset-card cursor-pointer bg-surface-container-low hover:bg-surface-container p-space-lg rounded-xl transition-all shadow-sm flex flex-col justify-between" id="preset-light" onclick="selectCompressionPreset('light')">
+<div>
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-surface-variant text-on-surface-variant font-caption text-caption uppercase tracking-wider font-semibold">Preimpresión</span>
+<div class="preset-check w-5 h-5 rounded-full bg-surface-variant flex items-center justify-center text-transparent">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-3">Ligera (-30%)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">300 DPI master. Conserva curvas Bezier complejas, transparencias alpha y fidelidad editorial.</p>
+</div>
+<div class="mt-6 pt-3 bg-surface-container-lowest/50 rounded-lg p-2.5">
+<div class="flex items-baseline justify-between">
+<span class="font-caption text-caption text-on-surface-variant">Peso Estimado:</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">~12.9 MB</span>
+</div>
+<div class="w-full bg-surface-variant h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 70%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm">
+<h4 class="font-label-lg text-label-lg text-on-surface mb- space-md flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">tune</span>
+          Opciones Avanzadas de Remuestreo y Limpieza WASM
+        </h4>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md mt-3">
+<label class="flex items-start gap-3 p-3 bg-surface-container rounded-lg cursor-pointer hover:bg-surface-container-high transition-colors">
+<input checked="" class="mt-0.5 rounded bg-surface-container-highest text-primary-container focus:ring-0 w-4 h-4" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">Purgar Metadatos EXIF</span>
+<span class="font-caption text-caption text-on-surface-variant">Remueve historial de autores, geolocalización y software previo.</span>
+</div>
+</label>
+<label class="flex items-start gap-3 p-3 bg-surface-container rounded-lg cursor-pointer hover:bg-surface-container-high transition-colors">
+<input checked="" class="mt-0.5 rounded bg-surface-container-highest text-primary-container focus:ring-0 w-4 h-4" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">Recodificar a WebP Lossless</span>
+<span class="font-caption text-caption text-on-surface-variant">Transforma bitmaps DCT JPEG tradicionales a flujo WebP.</span>
+</div>
+</label>
+<label class="flex items-start gap-3 p-3 bg-surface-container rounded-lg cursor-pointer hover:bg-surface-container-high transition-colors">
+<input checked="" class="mt-0.5 rounded bg-surface-container-highest text-primary-container focus:ring-0 w-4 h-4" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">Subconjuntos Tipográficos</span>
+<span class="font-caption text-caption text-on-surface-variant">Descarta glifos OpenType no utilizados en el cuerpo de texto.</span>
+</div>
+</label>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2 text-on-surface-variant font-caption text-caption">
+<span class="material-symbols-outlined text-[16px] text-tertiary">memory</span>
+<span>Aceleración por hilos WebAssembly (4 Cores dedicados activos)</span>
+</div>
+<button class="flex items-center gap-2 px-space-xl py-3 rounded-xl bg-primary-container text-on-primary-container hover:bg-primary-container/90 transition-all font-label-lg text-label-lg shadow-lg hover:shadow-primary-container/30 active:scale-[0.98]" onclick="triggerOptimizedToast()">
+<span class="material-symbols-outlined text-[20px]">magic_button</span>
+<span>Optimizar y Comprimir Documento</span>
+</button>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<h4 class="font-label-lg text-label-lg text-on-surface flex items-center justify-between">
+<span>Telemetría de Eficiencia</span>
+<span class="font-caption text-caption text-primary uppercase font-bold">WASM V4 Engine</span>
+</h4>
+<div class="flex items-center justify-center py-4 relative">
+<svg class="w-40 h-40 transform -rotate-90" viewbox="0 0 120 120">
+<circle class="stroke-surface-variant" cx="60" cy="60" fill="transparent" r="50" stroke-width="10"></circle>
+<circle class="stroke-primary" cx="60" cy="60" fill="transparent" r="50" stroke-dasharray="314.15" stroke-dashoffset="106.8" stroke-linecap="round" stroke-width="10"></circle>
+</svg>
+<div class="absolute flex flex-col items-center justify-center">
+<span class="font-display-lg text-display-lg text-on-surface font-extrabold">-66%</span>
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Ahorro Neto</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container p-space-md rounded-lg">
+<span class="font-caption text-caption text-on-surface-variant block">Tamaño Inicial</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">18.4 MB</span>
+</div>
+<div class="bg-surface-container p-space-md rounded-lg">
+<span class="font-caption text-caption text-primary block">Tamaño Final</span>
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">6.2 MB</span>
+</div>
+</div>
+<div class="space-y-2 mt-2">
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Flujo de Imágenes Vector/Raster</span>
+<span class="text-on-surface font-medium">11.8 MB → 2.1 MB</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Tablas y Glifos TrueType</span>
+<span class="text-on-surface font-medium">4.2 MB → 1.9 MB</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Metadatos y Nodos XML</span>
+<span class="text-on-surface font-medium">2.4 MB → 2.2 MB</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-high/60 rounded-xl p-space-md flex items-center gap-space-md">
+<span class="material-symbols-outlined text-tertiary text-[24px]">verified_user</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Procesamiento Local en Navegador</span>
+<span class="font-caption text-caption text-on-surface-variant">Ningún byte abandona este equipo. Sin servidores intermedios.</span>
+</div>
+</div>
+</div>
+</div>
+<div class="suite-panel hidden flex-col gap-space-lg" id="panel-merge">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Cola de Fusión en Orden Secuencial</span>
+<button class="flex items-center gap-1.5 px-space-md py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md transition-colors">
+<span class="material-symbols-outlined text-[16px]">add_circle</span>
+<span>+ Agregar más PDFs</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-sm" id="merge-queue">
+<div class="bg-surface-container p-space-md rounded-xl flex items-center justify-between gap-space-md shadow-sm hover:shadow-md transition-all group">
+<div class="flex items-center gap-space-md min-w-0">
+<span class="material-symbols-outlined text-outline cursor-grab active:cursor-grabbing text-[20px] group-hover:text-primary transition-colors">drag_indicator</span>
+<div class="w-10 h-12 rounded bg-surface-container-high flex flex-col items-center justify-center shrink-0">
+<span class="font-caption text-caption text-primary font-bold">#1</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">description</span>
+</div>
+<div class="min-w-0">
+<h4 class="font-label-lg text-label-lg text-on-surface truncate">Reporte_Financiero_Anual_Q4.pdf</h4>
+<div class="flex items-center gap-2 text-on-surface-variant font-caption text-caption">
+<span>18.4 MB</span>
+<span>•</span>
+<span>38 páginas</span>
+<span class="px-1.5 rounded bg-surface-container-high text-primary">Principal</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-surface-container-high text-on-surface-variant" title="Subir orden"><span class="material-symbols-outlined text-[18px]">arrow_upward</span></button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-surface-container-high text-on-surface-variant" title="Bajar orden"><span class="material-symbols-outlined text-[18px]">arrow_downward</span></button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-error-container/40 text-error" title="Eliminar"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl flex items-center justify-between gap-space-md shadow-sm hover:shadow-md transition-all group">
+<div class="flex items-center gap-space-md min-w-0">
+<span class="material-symbols-outlined text-outline cursor-grab active:cursor-grabbing text-[20px] group-hover:text-primary transition-colors">drag_indicator</span>
+<div class="w-10 h-12 rounded bg-surface-container-high flex flex-col items-center justify-center shrink-0">
+<span class="font-caption text-caption text-primary font-bold">#2</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">description</span>
+</div>
+<div class="min-w-0">
+<h4 class="font-label-lg text-label-lg text-on-surface truncate">Anexo_Contrato.pdf</h4>
+<div class="flex items-center gap-2 text-on-surface-variant font-caption text-caption">
+<span>4.1 MB</span>
+<span>•</span>
+<span>12 páginas</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-surface-container-high text-on-surface-variant" title="Subir orden"><span class="material-symbols-outlined text-[18px]">arrow_upward</span></button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-surface-container-high text-on-surface-variant" title="Bajar orden"><span class="material-symbols-outlined text-[18px]">arrow_downward</span></button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-error-container/40 text-error" title="Eliminar"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl flex items-center justify-between gap-space-md shadow-sm hover:shadow-md transition-all group">
+<div class="flex items-center gap-space-md min-w-0">
+<span class="material-symbols-outlined text-outline cursor-grab active:cursor-grabbing text-[20px] group-hover:text-primary transition-colors">drag_indicator</span>
+<div class="w-10 h-12 rounded bg-surface-container-high flex flex-col items-center justify-center shrink-0">
+<span class="font-caption text-caption text-primary font-bold">#3</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">description</span>
+</div>
+<div class="min-w-0">
+<h4 class="font-label-lg text-label-lg text-on-surface truncate">Dictamen_Auditoria.pdf</h4>
+<div class="flex items-center gap-2 text-on-surface-variant font-caption text-caption">
+<span>2.6 MB</span>
+<span>•</span>
+<span>8 páginas</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-surface-container-high text-on-surface-variant" title="Subir orden"><span class="material-symbols-outlined text-[18px]">arrow_upward</span></button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-surface-container-high text-on-surface-variant" title="Bajar orden"><span class="material-symbols-outlined text-[18px]">arrow_downward</span></button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-error-container/40 text-error" title="Eliminar"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl flex items-center justify-between gap-space-md shadow-sm hover:shadow-md transition-all group">
+<div class="flex items-center gap-space-md min-w-0">
+<span class="material-symbols-outlined text-outline cursor-grab active:cursor-grabbing text-[20px] group-hover:text-primary transition-colors">drag_indicator</span>
+<div class="w-10 h-12 rounded bg-surface-container-high flex flex-col items-center justify-center shrink-0">
+<span class="font-caption text-caption text-primary font-bold">#4</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">description</span>
+</div>
+<div class="min-w-0">
+<h4 class="font-label-lg text-label-lg text-on-surface truncate">Apendice_Tecnico.pdf</h4>
+<div class="flex items-center gap-2 text-on-surface-variant font-caption text-caption">
+<span>7.8 MB</span>
+<span>•</span>
+<span>24 páginas</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-surface-container-high text-on-surface-variant" title="Subir orden"><span class="material-symbols-outlined text-[18px]">arrow_upward</span></button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-surface-container-high text-on-surface-variant" title="Bajar orden"><span class="material-symbols-outlined text-[18px]">arrow_downward</span></button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-error-container/40 text-error" title="Eliminar"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<h4 class="font-label-lg text-label-lg text-on-surface">Resumen de Ensamblado</h4>
+<div class="space-y-3">
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Archivos a compaginar:</span>
+<span class="text-on-surface font-semibold">4 documentos</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Total de pliegos / páginas:</span>
+<span class="text-on-surface font-semibold">82 páginas</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Tamaño consolidado:</span>
+<span class="text-on-surface font-semibold">32.9 MB</span>
+</div>
+</div>
+<div class="bg-surface-container p-3 rounded-lg flex items-center gap-2 mt-2">
+<input checked="" class="rounded bg-surface-container-highest text-primary-container focus:ring-0" id="renumber-pages" type="checkbox"/>
+<label class="font-caption text-caption text-on-surface cursor-pointer" for="renumber-pages">
+              Renumerar foliado correlativo unificado en pie de página
+            </label>
+</div>
+<button class="w-full mt-2 flex items-center justify-center gap-2 py-3 rounded-xl bg-primary-container text-on-primary-container hover:bg-primary-container/90 transition-all font-label-lg text-label-lg shadow-md active:scale-[0.98]" onclick="triggerOptimizedToast('Archivos combinados con éxito: 82 páginas consolidadas en formato ISO 19005-1.')">
+<span class="material-symbols-outlined text-[20px]">layers</span>
+<span>Unir 4 Documentos en un solo PDF</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="suite-panel hidden flex-col gap-space-lg" id="panel-split">
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md bg-surface-container-low p-space-md rounded-xl">
+<div class="flex items-center gap-space-md">
+<span class="material-symbols-outlined text-primary text-[24px]">view_module</span>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface">Selección Visual de Páginas a Extraer</h4>
+<p class="font-caption text-caption text-on-surface-variant">Haga clic en las miniaturas para incluir o descartar pliegos en la exportación.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors" onclick="toggleSelectAllPages(true)">Seleccionar Todas</button>
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm transition-colors" onclick="toggleSelectAllPages(false)">Limpiar</button>
+</div>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-space-md">
+<div class="page-thumb group relative rounded-xl p-space-sm bg-surface-container cursor-pointer transition-all hover:bg-surface-container-high ring-2 ring-primary" onclick="togglePageSelection(this)">
+<div class="absolute top-2 right-2 z-10 w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center shadow">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="w-full aspect-[3/4] bg-surface-container-highest rounded-lg overflow-hidden flex flex-col p-3 shadow-inner relative">
+<div class="w-1/2 h-2 bg-primary/40 rounded mb-2"></div>
+<div class="w-full h-1.5 bg-outline-variant/30 rounded mb-1"></div>
+<div class="w-3/4 h-1.5 bg-outline-variant/30 rounded mb-3"></div>
+<div class="w-full flex-1 bg-surface-container-high/60 rounded p-1.5 flex flex-col gap-1">
+<div class="w-full h-1 bg-outline/20 rounded"></div>
+<div class="w-full h-1 bg-outline/20 rounded"></div>
+<div class="w-2/3 h-1 bg-outline/20 rounded"></div>
+</div>
+<span class="mt-2 text-center font-caption text-caption text-on-surface font-bold">Pág. 1</span>
+</div>
+<span class="block text-center font-caption text-caption text-primary mt-1 font-semibold">Portada &amp; Resumen</span>
+</div>
+<div class="page-thumb group relative rounded-xl p-space-sm bg-surface-container cursor-pointer transition-all hover:bg-surface-container-high" onclick="togglePageSelection(this)">
+<div class="absolute top-2 right-2 z-10 w-6 h-6 rounded-full bg-surface-variant text-transparent flex items-center justify-center shadow">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="w-full aspect-[3/4] bg-surface-container-highest rounded-lg overflow-hidden flex flex-col p-3 shadow-inner relative">
+<div class="w-3/4 h-2 bg-outline-variant/50 rounded mb-2"></div>
+<div class="w-full h-1 bg-outline-variant/20 rounded mb-1"></div>
+<div class="w-full h-1 bg-outline-variant/20 rounded mb-1"></div>
+<div class="w-full h-1 bg-outline-variant/20 rounded mb-1"></div>
+<div class="w-full h-1 bg-outline-variant/20 rounded mb-3"></div>
+<span class="mt-auto text-center font-caption text-caption text-on-surface-variant font-bold">Pág. 2</span>
+</div>
+<span class="block text-center font-caption text-caption text-on-surface-variant mt-1">Índice General</span>
+</div>
+<div class="page-thumb group relative rounded-xl p-space-sm bg-surface-container cursor-pointer transition-all hover:bg-surface-container-high ring-2 ring-primary" onclick="togglePageSelection(this)">
+<div class="absolute top-2 right-2 z-10 w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center shadow">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="w-full aspect-[3/4] bg-surface-container-highest rounded-lg overflow-hidden flex flex-col p-3 shadow-inner relative">
+<div class="w-1/3 h-2 bg-primary/40 rounded mb-2"></div>
+<div class="w-full h-12 bg-surface-container-high/80 rounded mb-2 p-1">
+<div class="flex items-end h-full gap-1">
+<div class="w-1/4 bg-primary/40 h-1/2 rounded-xs"></div>
+<div class="w-1/4 bg-primary/60 h-3/4 rounded-xs"></div>
+<div class="w-1/4 bg-primary h-full rounded-xs"></div>
+<div class="w-1/4 bg-tertiary h-2/3 rounded-xs"></div>
+</div>
+</div>
+<div class="w-full h-1 bg-outline-variant/20 rounded mb-1"></div>
+<span class="mt-auto text-center font-caption text-caption text-on-surface font-bold">Pág. 3</span>
+</div>
+<span class="block text-center font-caption text-caption text-primary mt-1 font-semibold">Gráficos de Balance</span>
+</div>
+<div class="page-thumb group relative rounded-xl p-space-sm bg-surface-container cursor-pointer transition-all hover:bg-surface-container-high" onclick="togglePageSelection(this)">
+<div class="absolute top-2 right-2 z-10 w-6 h-6 rounded-full bg-surface-variant text-transparent flex items-center justify-center shadow">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="w-full aspect-[3/4] bg-surface-container-highest rounded-lg overflow-hidden flex flex-col p-3 shadow-inner relative">
+<div class="w-2/3 h-2 bg-outline-variant/50 rounded mb-2"></div>
+<div class="space-y-1 my-auto">
+<div class="w-full h-1 bg-outline-variant/20 rounded"></div>
+<div class="w-full h-1 bg-outline-variant/20 rounded"></div>
+<div class="w-full h-1 bg-outline-variant/20 rounded"></div>
+</div>
+<span class="mt-auto text-center font-caption text-caption text-on-surface-variant font-bold">Pág. 4</span>
+</div>
+<span class="block text-center font-caption text-caption text-on-surface-variant mt-1">Notas Contables</span>
+</div>
+<div class="page-thumb group relative rounded-xl p-space-sm bg-surface-container cursor-pointer transition-all hover:bg-surface-container-high ring-2 ring-primary" onclick="togglePageSelection(this)">
+<div class="absolute top-2 right-2 z-10 w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center shadow">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="w-full aspect-[3/4] bg-surface-container-highest rounded-lg overflow-hidden flex flex-col p-3 shadow-inner relative">
+<div class="w-1/2 h-2 bg-primary/40 rounded mb-2"></div>
+<div class="w-full h-1 bg-outline-variant/20 rounded mb-2"></div>
+<div class="w-16 h-8 bg-surface-variant/70 rounded self-end flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px] text-tertiary">draw</span>
+</div>
+<span class="mt-auto text-center font-caption text-caption text-on-surface font-bold">Pág. 5</span>
+</div>
+<span class="block text-center font-caption text-caption text-primary mt-1 font-semibold">Firmas &amp; Certificación</span>
+</div>
+<div class="page-thumb group relative rounded-xl p-space-sm bg-surface-container cursor-pointer transition-all hover:bg-surface-container-high" onclick="togglePageSelection(this)">
+<div class="absolute top-2 right-2 z-10 w-6 h-6 rounded-full bg-surface-variant text-transparent flex items-center justify-center shadow">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="w-full aspect-[3/4] bg-surface-container-highest rounded-lg overflow-hidden flex flex-col p-3 shadow-inner relative">
+<div class="w-2/3 h-2 bg-outline-variant/50 rounded mb-2"></div>
+<div class="space-y-1.5 mt-2">
+<div class="w-full h-1 bg-outline-variant/20 rounded"></div>
+<div class="w-4/5 h-1 bg-outline-variant/20 rounded"></div>
+<div class="w-full h-1 bg-outline-variant/20 rounded"></div>
+</div>
+<span class="mt-auto text-center font-caption text-caption text-on-surface-variant font-bold">Pág. 6</span>
+</div>
+<span class="block text-center font-caption text-caption text-on-surface-variant mt-1">Dictamen Legal</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col md:flex-row items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Modo de Exportación del Desglose:</span>
+<div class="flex items-center gap-space-md mt-2">
+<label class="flex items-center gap-2 cursor-pointer font-body-sm text-body-sm text-on-surface">
+<input checked="" class="text-primary-container focus:ring-0 bg-surface-container-highest" name="split_mode" type="radio"/>
+<span>Extraer páginas seleccionadas como PDF único (3 pliegos)</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer font-body-sm text-body-sm text-on-surface-variant">
+<input class="text-primary-container focus:ring-0 bg-surface-container-highest" name="split_mode" type="radio"/>
+<span>Dividir cada pliego individualmente en archivos ZIP</span>
+</label>
+</div>
+</div>
+</div>
+<button class="flex items-center gap-2 px-space-xl py-3 rounded-xl bg-primary-container text-on-primary-container hover:bg-primary-container/90 transition-all font-label-lg text-label-lg shadow-md shrink-0 active:scale-[0.98]" onclick="triggerOptimizedToast('Páginas 1, 3 y 5 extraídas como Reporte_Financiero_Extract.pdf')">
+<span class="material-symbols-outlined text-[20px]">file_download</span>
+<span>Ejecutar División &amp; Descargar</span>
+</button>
+</div>
+</div>
+<div class="fixed bottom-12 right-6 z-50 flex items-center gap-space-md bg-surface-container-highest text-on-surface px-space-lg py-3 rounded-xl shadow-2xl transition-all duration-300 transform translate-y-2 opacity-0 pointer-events-none" id="toast-success">
+<div class="w-2 h-8 rounded-full bg-primary-container shrink-0"></div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">task_alt</span>
+<span class="font-body-sm text-body-sm font-medium" id="toast-message">Optimización completada: Reducción del 66% (De 18.4 MB a 6.2 MB).</span>
+</div>
+<div class="flex items-center gap-2 ml-4">
+<button class="px-2 py-1 rounded bg-surface-variant hover:bg-surface-bright text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold transition-colors" onclick="dismissToast()">
+        DESCARGAR
+      </button>
+<button class="text-on-surface-variant hover:text-on-surface" onclick="dismissToast()">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  function switchSuiteTab(tabKey) {
+    const tabs = document.querySelectorAll('.suite-tab');
+    const panels = document.querySelectorAll('.suite-panel');
+
+    tabs.forEach(tab => {
+      tab.classList.remove('bg-primary-container', 'text-on-primary-container', 'shadow-sm');
+      tab.classList.add('text-on-surface-variant');
+    });
+
+    panels.forEach(panel => {
+      panel.classList.add('hidden');
+      panel.classList.remove('flex');
+    });
+
+    const activeTab = document.getElementById('tab-' + tabKey);
+    const activePanel = document.getElementById('panel-' + tabKey);
+
+    if (activeTab && activePanel) {
+      activeTab.classList.add('bg-primary-container', 'text-on-primary-container', 'shadow-sm');
+      activeTab.classList.remove('text-on-surface-variant');
+      activePanel.classList.remove('hidden');
+      if (tabKey === 'merge' || tabKey === 'split') {
+        activePanel.classList.add('flex');
+      }
+    }
+  }
+
+  function selectCompressionPreset(level) {
+    const cards = document.querySelectorAll('.preset-card');
+    cards.forEach(card => {
+      card.classList.remove('ring-2', 'ring-primary-container', 'bg-surface-container');
+      card.classList.add('bg-surface-container-low');
+      const check = card.querySelector('.preset-check');
+      if (check) {
+        check.classList.remove('bg-primary-container', 'text-on-primary-container');
+        check.classList.add('bg-surface-variant', 'text-transparent');
+      }
+    });
+
+    const selected = document.getElementById('preset-' + level);
+    if (selected) {
+      selected.classList.remove('bg-surface-container-low');
+      selected.classList.add('bg-surface-container', 'ring-2', 'ring-primary-container');
+      const check = selected.querySelector('.preset-check');
+      if (check) {
+        check.classList.remove('bg-surface-variant', 'text-transparent');
+        check.classList.add('bg-primary-container', 'text-on-primary-container');
+      }
+    }
+  }
+
+  function togglePageSelection(card) {
+    const isSelected = card.classList.contains('ring-2');
+    const checkBadge = card.querySelector('.absolute div, .absolute span').parentElement;
+    
+    if (isSelected) {
+      card.classList.remove('ring-2', 'ring-primary');
+      checkBadge.classList.remove('bg-primary', 'text-on-primary');
+      checkBadge.classList.add('bg-surface-variant', 'text-transparent');
+    } else {
+      card.classList.add('ring-2', 'ring-primary');
+      checkBadge.classList.remove('bg-surface-variant', 'text-transparent');
+      checkBadge.classList.add('bg-primary', 'text-on-primary');
+    }
+  }
+
+  function toggleSelectAllPages(selectState) {
+    const cards = document.querySelectorAll('.page-thumb');
+    cards.forEach(card => {
+      const isSelected = card.classList.contains('ring-2');
+      if (selectState && !isSelected) {
+        togglePageSelection(card);
+      } else if (!selectState && isSelected) {
+        togglePageSelection(card);
+      }
+    });
+  }
+
+  function triggerOptimizedToast(customMsg) {
+    const toast = document.getElementById('toast-success');
+    const msg = document.getElementById('toast-message');
+    if (customMsg) {
+      msg.textContent = customMsg;
+    } else {
+      msg.textContent = "Optimización completada: Reducción del 66% (De 18.4 MB a 6.2 MB).";
+    }
+    toast.classList.remove('opacity-0', 'translate-y-2', 'pointer-events-none');
+    toast.classList.add('opacity-100', 'translate-y-0');
+
+    setTimeout(() => {
+      dismissToast();
+    }, 6000);
+  }
+
+  function dismissToast() {
+    const toast = document.getElementById('toast-success');
+    toast.classList.add('opacity-0', 'translate-y-2', 'pointer-events-none');
+    toast.classList.remove('opacity-100', 'translate-y-0');
+  }
+</script></main></div><footer class="fixed bottom-0 left-0 right-0 h-7 bg-surface-container-lowest z-50 px-margin flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm shadow-[0_-1px_6px_rgba(0,0,0,0.3)]"><div class="flex items-center gap-space-lg"><span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[14px]">menu_book</span><span>Página 1 de 4</span></span><span class="h-3 w-[1px] bg-surface-variant"></span><span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[14px]">format_align_left</span><span>1,420 palabras</span></span><span class="h-3 w-[1px] bg-surface-variant"></span><span class="flex items-center gap-1 text-primary"><span class="material-symbols-outlined text-[14px]">lock</span><span>WASM Encrypted (AES-GCM 256)</span></span></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-1"><button class="w-5 h-5 flex items-center justify-center hover:text-on-surface" title="Modo Lectura"><span class="material-symbols-outlined text-[14px]">chrome_reader_mode</span></button><button class="w-5 h-5 flex items-center justify-center text-on-surface" title="Diseño de Impresión"><span class="material-symbols-outlined text-[14px]">print</span></button><button class="w-5 h-5 flex items-center justify-center hover:text-on-surface" title="Diseño Web"><span class="material-symbols-outlined text-[14px]">web</span></button></div><span class="h-3 w-[1px] bg-surface-variant"></span><div class="flex items-center gap-2"><button class="w-5 h-5 flex items-center justify-center hover:text-on-surface"><span class="material-symbols-outlined text-[14px]">remove</span></button><div class="w-24 h-1 bg-surface-variant rounded-full overflow-hidden flex items-center"><div class="w-1/2 h-full bg-primary rounded-full"></div></div><button class="w-5 h-5 flex items-center justify-center hover:text-on-surface"><span class="material-symbols-outlined text-[14px]">add</span></button><span class="w-10 text-right font-caption text-caption">100%</span></div></div></footer></body></html>

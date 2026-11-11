@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container":"#171f33","primary-fixed":"#dbe1ff","error-container":"#93000a","on-secondary-fixed":"#25005a","surface-variant":"#2d3449","surface-bright":"#31394d","surface-container-low":"#131b2e","on-tertiary-fixed-variant":"#653e00","inverse-on-surface":"#283044","on-tertiary-container":"#ffeedd","background":"#0b1326","on-secondary-fixed-variant":"#5a00c6","surface-container-lowest":"#060e20","primary-fixed-dim":"#b4c5ff","inverse-primary":"#0053db","secondary-container":"#6001d1","primary":"#b4c5ff","inverse-surface":"#dae2fd","on-secondary":"#3f008e","on-background":"#dae2fd","surface-dim":"#0b1326","tertiary":"#ffb95f","secondary-fixed-dim":"#d2bbff","tertiary-container":"#996100","surface-container-high":"#222a3d","secondary":"#d2bbff","on-surface":"#dae2fd","on-tertiary-fixed":"#2a1700","surface-tint":"#b4c5ff","on-error":"#690005","on-primary":"#002a78","tertiary-fixed":"#ffddb8","error":"#ffb4ab","secondary-fixed":"#eaddff","on-secondary-container":"#c9aeff","tertiary-fixed-dim":"#ffb95f","surface-container-highest":"#2d3449","on-primary-fixed-variant":"#003ea8","on-error-container":"#ffdad6","on-tertiary":"#472a00","on-primary-fixed":"#00174b","outline-variant":"#434655","outline":"#8d90a0","primary-container":"#2563eb","surface":"#0b1326","on-primary-container":"#eeefff","on-surface-variant":"#c3c6d7"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"0.75rem","gutter-tablet":"1rem","space-md":"0.75rem","space-xl":"1.5rem","space-lg":"1rem","margin-tablet":"1.5rem","margin":"1rem","space-xs":"0.25rem","space-sm":"0.5rem"},"fontFamily":{"body-sm":["Inter"],"body-lg":["Inter"],"headline-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"label-lg":["Inter"],"label-sm":["Inter"],"caption":["Inter"],"body-md":["Inter"],"headline-md":["Plus Jakarta Sans"],"label-md":["Inter"]},"fontSize":{"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"display-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"500"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"600"}],"caption":["10px",{"lineHeight":"12px","letterSpacing":"0.04em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}]}}}};</script></head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased select-none"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.3)]"><div class="h-14 px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md min-w-[260px]"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-container shadow-[0_2px_8px_rgba(0,0,0,0.4)]"><span class="material-symbols-outlined text-[20px]">description</span></div><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-bold">DocuFlow<span class="text-primary font-normal ml-0.5">Pro</span></span></div><span class="px-space-xs py-0.5 rounded bg-surface-variant text-on-surface-variant font-caption text-caption uppercase tracking-wider font-semibold">Enterprise v4.2</span><div class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px] text-primary">cloud_done</span><span>Sincronizado</span></div></div><div class="flex-1 max-w-xl"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px] pointer-events-none">search</span><input class="w-full h-9 pl-9 pr-14 rounded-lg bg-surface-container-highest text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm outline-none focus:ring-1 focus:ring-primary shadow-inner" placeholder="Buscar herramientas, textos, comandos... (Alt+Q)" type="text"/><kbd class="absolute right-3 px-1.5 py-0.5 rounded bg-surface-variant font-caption text-caption text-on-surface-variant">Alt+Q</kbd></div></div><div class="flex items-center gap-space-sm min-w-[260px] justify-end"><div class="flex items-center bg-surface-container rounded-lg p-0.5"><button class="w-7 h-7 flex items-center justify-center rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-variant transition-colors" title="Deshacer"><span class="material-symbols-outlined text-[18px]">undo</span></button><button class="w-7 h-7 flex items-center justify-center rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-variant transition-colors" title="Rehacer"><span class="material-symbols-outlined text-[18px]">redo</span></button></div><button class="w-8 h-8 flex items-center justify-center rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-variant transition-colors" title="Alternar tema"><span class="material-symbols-outlined text-[18px]">dark_mode</span></button><button class="flex items-center gap-1.5 h-8 px-space-md rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md hover:bg-primary-container/90 transition-colors shadow-sm"><span class="material-symbols-outlined text-[16px]">ios_share</span><span>Exportar</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><nav class="h-10 px-margin flex items-center gap-space-xs bg-surface-container-lowest overflow-x-auto shadow-[0_1px_4px_rgba(0,0,0,0.2)]" data-active-classes="bg-surface-container-highest text-primary font-semibold border-b-2 border-primary"><a class="px-space-md h-full flex items-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="editor-de-documento" href="#">Inicio</a><a aria-current="page" class="px-space-md h-full flex items-center transition-colors whitespace-nowrap bg-surface-container-highest text-primary font-semibold border-b-2 border-primary" data-path="insertar" href="#">Insertar</a><a class="px-space-md h-full flex items-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="dibujar-y-formas" href="#">Dibujar y Formas</a><a class="px-space-md h-full flex items-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="herramientas-pdf" href="#">Organizar &amp; Herramientas PDF</a><a class="px-space-md h-full flex items-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="conversor-a-word" href="#">Conversor &amp; Exportar</a><a class="px-space-md h-full flex items-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="revision" href="#">Revisión</a><a class="px-space-md h-full flex items-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="vista" href="#">Vista</a></nav></header><aside class="fixed left-0 top-24 bottom-7 w-64 bg-surface-container-low z-40 flex flex-col p-space-sm shadow-[1px_0_8px_rgba(0,0,0,0.25)]"><div class="px-space-md py-space-sm font-label-sm text-label-sm uppercase tracking-wider text-outline">Espacio de Trabajo</div><nav class="flex-1 flex flex-col gap-1 overflow-y-auto" data-active-classes="bg-surface-container-high text-primary font-semibold"><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="editor-de-documento" href="#"><span class="material-symbols-outlined text-[20px]">edit_document</span><span class="font-label-md text-label-md truncate">Editor de Documento</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="herramientas-pdf" href="#"><span class="material-symbols-outlined text-[20px]">splitscreen</span><span class="font-label-md text-label-md truncate">Herramientas PDF</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="conversor-a-word" href="#"><span class="material-symbols-outlined text-[20px]">transform</span><span class="font-label-md text-label-md truncate">Conversor Multi-formato</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="miniaturas-y-esquema" href="#"><span class="material-symbols-outlined text-[20px]">view_sidebar</span><span class="font-label-md text-label-md truncate">Miniaturas y Esquema</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="biblioteca-de-recursos" href="#"><span class="material-symbols-outlined text-[20px]">folder_copy</span><span class="font-label-md text-label-md truncate">Biblioteca de Recursos</span></a></nav><div class="mt-auto p-space-sm bg-surface-container rounded-lg flex items-center justify-between text-on-surface-variant"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-tertiary">shield_lock</span><span class="font-caption text-caption">Sandbox Aislado</span></div><span class="font-caption text-caption uppercase text-outline">WASM</span></div></aside><div class="pl-64"><main class="relative pt-24 pb-7 min-h-screen bg-surface w-full px-margin"><div class="flex flex-col w-full relative min-h-[calc(100vh-7rem)] overflow-hidden">
+<!-- LIENZO DE TRABAJO BASE (CANVAS A4 SUBYACENTE) -->
+<div class="w-full flex justify-center py-6 pointer-events-none opacity-40 select-none filter blur-[1px]">
+<div class="w-[820px] min-h-[1080px] bg-surface-container-lowest text-on-surface rounded-xl shadow-2xl p-16 relative flex flex-col justify-between">
+<!-- Decoración de Página de Documento Legal/Técnico -->
+<div>
+<div class="flex items-center justify-between pb-8">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+</div>
+<div>
+<p class="font-headline-sm text-headline-sm font-semibold tracking-tight text-on-surface">CONTRATO DE SERVICIOS EN LA NUBE - SLA 99.99%</p>
+<p class="font-caption text-caption text-outline">REF: DOC-2025-CORP-0941 // WASM ENCRYPTED STORAGE</p>
+</div>
+</div>
+<span class="px-2 py-1 rounded bg-surface-variant font-label-sm text-label-sm text-on-surface-variant">ANEXO TÉCNICO B</span>
+</div>
+<div class="space-y-4 pt-4">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Las partes acuerdan implementar la arquitectura de micro-servicios aislados dentro del clúster de alta disponibilidad, garantizando un rendimiento operacional continuo sin degradación de latencia.
+          </p>
+<div class="h-44 w-full bg-surface-container-low rounded-lg p-6 flex flex-col justify-center items-center">
+<span class="material-symbols-outlined text-outline text-[40px] mb-2">schema</span>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Espacio reservado para diagrama de flujo de arquitectura</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Cualquier modificación o alteración a los parámetros de balanceo requerirá de la validación criptográfica multi-firma de al menos dos delegados autorizados de seguridad técnica.
+          </p>
+</div>
+</div>
+<div class="pt-8 flex justify-between items-center text-outline font-caption text-caption">
+<span>CONFIDENCIAL • USO INTERNO EXCLUSIVO</span>
+<span>HOJA 02 / 04</span>
+</div>
+</div>
+</div>
+<!-- OVERLAY CON EFECTO BACKDROP BLUR PROFUNDO -->
+<div class="absolute inset-0 bg-background/70 backdrop-blur-xl z-20 flex items-center justify-center p-4">
+<!-- VENTANA MODAL PRINCIPAL (FLUENT / macOS REFINED) -->
+<div class="w-full max-w-5xl bg-surface-container-low rounded-xl shadow-2xl overflow-hidden flex flex-col max-h-[901px] animate-in fade-in zoom-in-95 duration-200">
+<!-- Modal Header -->
+<div class="px-6 py-4 bg-surface-container-high flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[18px]">category</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Biblioteca de Figuras, Formas y Recursos Gráficos</h2>
+<p class="font-caption text-caption text-on-surface-variant">Librería vectorial de alta precisión e inyección de mapa de bits</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-variant font-caption text-caption text-primary font-semibold">SVG Engine v2.4</span>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-variant text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Cerrar modal">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Segmented Navigation Tabs -->
+<div class="px-6 pt-3 bg-surface-container-low flex items-center gap-1 overflow-x-auto">
+<button class="tab-button px-4 py-2 rounded-t-lg bg-surface-container text-primary font-label-md text-label-md flex items-center gap-2 shadow-sm font-semibold transition-all" id="tab-shapes">
+<span class="material-symbols-outlined text-[18px]">square_foot</span>
+<span>Formas Básicas</span>
+</button>
+<button class="tab-button px-4 py-2 rounded-t-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center gap-2 transition-all" id="tab-polygons">
+<span class="material-symbols-outlined text-[18px]">pentagon</span>
+<span>Polígonos &amp; Estrellas</span>
+</button>
+<button class="tab-button px-4 py-2 rounded-t-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center gap-2 transition-all" id="tab-arrows">
+<span class="material-symbols-outlined text-[18px]">alt_route</span>
+<span>Flechas &amp; Conectores</span>
+</button>
+<button class="tab-button px-4 py-2 rounded-t-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center gap-2 transition-all" id="tab-callouts">
+<span class="material-symbols-outlined text-[18px]">chat_bubble_outline</span>
+<span>Llamadas &amp; Globos</span>
+</button>
+<button class="tab-button px-4 py-2 rounded-t-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center gap-2 transition-all" id="tab-images">
+<span class="material-symbols-outlined text-[18px]">image</span>
+<span>Gestión de Imágenes</span>
+</button>
+</div>
+<!-- Main Body Container: Split Grid (Catalog + Inspector) -->
+<div class="flex-1 grid grid-cols-12 min-h-[460px] overflow-hidden bg-surface-container">
+<!-- Left: Interactive Gallery/Workspace (Cols 8) -->
+<div class="col-span-8 p-6 overflow-y-auto space-y-6">
+<!-- Section: Formas Geométricas Activas -->
+<div class="space-y-4" id="content-shapes">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold">Formas Primitivas 2D</span>
+<span class="font-caption text-caption text-on-surface-variant">Haga clic en una figura para transferir al inspector</span>
+</div>
+<!-- Grid de selección de Formas Básicas -->
+<div class="grid grid-cols-4 gap-3">
+<!-- Rectángulo -->
+<div class="shape-card group p-3 rounded-lg bg-surface-container-high hover:bg-surface-bright cursor-pointer flex flex-col items-center justify-center gap-2 transition-all shadow-sm ring-2 ring-primary">
+<svg class="w-12 h-12 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 48 48">
+<rect fill="currentColor" fill-opacity="0.15" height="28" width="36" x="6" y="10"></rect>
+</svg>
+<span class="font-label-sm text-label-sm text-on-surface">Rectángulo</span>
+</div>
+<!-- Rectángulo Redondeado -->
+<div class="shape-card group p-3 rounded-lg bg-surface-container-high hover:bg-surface-bright cursor-pointer flex flex-col items-center justify-center gap-2 transition-all shadow-sm">
+<svg class="w-12 h-12 text-on-surface-variant group-hover:text-primary transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 48 48">
+<rect fill="currentColor" fill-opacity="0.15" height="28" rx="8" width="36" x="6" y="10"></rect>
+</svg>
+<span class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-on-surface">Rect. Redondeado</span>
+</div>
+<!-- Círculo -->
+<div class="shape-card group p-3 rounded-lg bg-surface-container-high hover:bg-surface-bright cursor-pointer flex flex-col items-center justify-center gap-2 transition-all shadow-sm">
+<svg class="w-12 h-12 text-on-surface-variant group-hover:text-primary transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 48 48">
+<circle cx="24" cy="24" fill="currentColor" fill-opacity="0.15" r="18"></circle>
+</svg>
+<span class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-on-surface">Círculo</span>
+</div>
+<!-- Elipse -->
+<div class="shape-card group p-3 rounded-lg bg-surface-container-high hover:bg-surface-bright cursor-pointer flex flex-col items-center justify-center gap-2 transition-all shadow-sm">
+<svg class="w-12 h-12 text-on-surface-variant group-hover:text-primary transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 48 48">
+<ellipse cx="24" cy="24" fill="currentColor" fill-opacity="0.15" rx="20" ry="12"></ellipse>
+</svg>
+<span class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-on-surface">Elipse</span>
+</div>
+<!-- Triángulo Equilátero -->
+<div class="shape-card group p-3 rounded-lg bg-surface-container-high hover:bg-surface-bright cursor-pointer flex flex-col items-center justify-center gap-2 transition-all shadow-sm">
+<svg class="w-12 h-12 text-on-surface-variant group-hover:text-primary transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 48 48">
+<polygon fill="currentColor" fill-opacity="0.15" points="24,6 42,40 6,40"></polygon>
+</svg>
+<span class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-on-surface">Triángulo Equi.</span>
+</div>
+<!-- Triángulo Rectángulo -->
+<div class="shape-card group p-3 rounded-lg bg-surface-container-high hover:bg-surface-bright cursor-pointer flex flex-col items-center justify-center gap-2 transition-all shadow-sm">
+<svg class="w-12 h-12 text-on-surface-variant group-hover:text-primary transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 48 48">
+<polygon fill="currentColor" fill-opacity="0.15" points="8,8 8,40 40,40"></polygon>
+</svg>
+<span class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-on-surface">Triángulo Rect.</span>
+</div>
+<!-- Rombo -->
+<div class="shape-card group p-3 rounded-lg bg-surface-container-high hover:bg-surface-bright cursor-pointer flex flex-col items-center justify-center gap-2 transition-all shadow-sm">
+<svg class="w-12 h-12 text-on-surface-variant group-hover:text-primary transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 48 48">
+<polygon fill="currentColor" fill-opacity="0.15" points="24,6 42,24 24,42 6,24"></polygon>
+</svg>
+<span class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-on-surface">Rombo</span>
+</div>
+<!-- Trapecio -->
+<div class="shape-card group p-3 rounded-lg bg-surface-container-high hover:bg-surface-bright cursor-pointer flex flex-col items-center justify-center gap-2 transition-all shadow-sm">
+<svg class="w-12 h-12 text-on-surface-variant group-hover:text-primary transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 48 48">
+<polygon fill="currentColor" fill-opacity="0.15" points="14,10 34,10 42,38 6,38"></polygon>
+</svg>
+<span class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-on-surface">Trapecio</span>
+</div>
+</div>
+<!-- Panel Polígonos Paramétricos interactivos -->
+<div class="mt-6 pt-4 space-y-4">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold">Generador de Polígonos de N Lados</span>
+<span class="px-2 py-0.5 rounded bg-surface-variant text-tertiary font-label-sm text-label-sm font-semibold">Lados: N = <span id="sides-display">6</span></span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-high flex items-center gap-6 shadow-sm">
+<div class="w-20 h-20 bg-surface-container rounded-lg flex items-center justify-center flex-shrink-0">
+<svg class="w-16 h-16 text-tertiary" fill="none" id="polygon-preview" stroke="currentColor" stroke-width="2" viewbox="0 0 48 48">
+<!-- Hexágono por defecto N=6 -->
+<polygon fill="currentColor" fill-opacity="0.2" points="24,6 39,15 39,33 24,42 9,33 9,15"></polygon>
+</svg>
+</div>
+<div class="flex-1 space-y-2">
+<div class="flex justify-between font-caption text-caption text-on-surface-variant">
+<span>3 Lados (Triángulo)</span>
+<span>12 Lados (Dodecágono)</span>
+</div>
+<input class="w-full h-1.5 bg-surface-variant rounded-lg appearance-none cursor-pointer accent-primary" id="sides-slider" max="12" min="3" type="range" value="6"/>
+<div class="flex items-center gap-3 pt-1">
+<button class="px-2.5 py-1 rounded bg-surface-variant hover:bg-surface-bright text-on-surface font-caption text-caption flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[14px]">star</span><span>Estrella 5P</span>
+</button>
+<button class="px-2.5 py-1 rounded bg-surface-variant hover:bg-surface-bright text-on-surface font-caption text-caption flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[14px]">stars</span><span>Estrella 8P</span>
+</button>
+<button class="px-2.5 py-1 rounded bg-surface-variant hover:bg-surface-bright text-on-surface font-caption text-caption flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[14px]">add_box</span><span>Cruz Médica</span>
+</button>
+<button class="px-2.5 py-1 rounded bg-surface-variant hover:bg-surface-bright text-on-surface font-caption text-caption flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[14px]">workspace_premium</span><span>Sello Garantía</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Inyección de Imagen & Fuentes Rápidas -->
+<div class="mt-6 pt-4 space-y-3">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold">Integración de Medios Externos</span>
+<div class="grid grid-cols-3 gap-3">
+<button class="p-3.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-left flex flex-col gap-2 transition-all shadow-sm">
+<div class="w-7 h-7 rounded bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">content_paste</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-medium block">Desde Portapapeles</span>
+<span class="font-caption text-caption text-outline">Ctrl + V / Cmd + V</span>
+</div>
+</button>
+<button class="p-3.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-left flex flex-col gap-2 transition-all shadow-sm">
+<div class="w-7 h-7 rounded bg-surface-variant text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">upload_file</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-medium block">Cargar de Disco</span>
+<span class="font-caption text-caption text-outline">WebP, PNG, SVG, JPG</span>
+</div>
+</button>
+<button class="p-3.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-left flex flex-col gap-2 transition-all shadow-sm">
+<div class="w-7 h-7 rounded bg-surface-variant text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">link</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-medium block">URL de Imagen</span>
+<span class="font-caption text-caption text-outline">HTTP/HTTPS Web Stream</span>
+</div>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Real-time Customization Panel (Cols 4) -->
+<div class="col-span-4 bg-surface-container-low p-6 overflow-y-auto space-y-6">
+<div class="flex items-center justify-between pb-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Propiedades En Vivo</span>
+<span class="material-symbols-outlined text-outline text-[18px]">tune</span>
+</div>
+<!-- Color de Relleno -->
+<div class="space-y-3">
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold block">Color de Relleno</label>
+<div class="grid grid-cols-6 gap-2">
+<button class="w-7 h-7 rounded-full bg-primary-container ring-2 ring-primary ring-offset-2 ring-offset-surface-container-low shadow-sm" title="Azul Corporativo"></button>
+<button class="w-7 h-7 rounded-full bg-tertiary shadow-sm hover:scale-110 transition-transform" title="Ámbar Ejecutivo"></button>
+<button class="w-7 h-7 rounded-full bg-secondary shadow-sm hover:scale-110 transition-transform" title="Lavanda"></button>
+<button class="w-7 h-7 rounded-full bg-surface-variant shadow-sm hover:scale-110 transition-transform" title="Gris Grafito"></button>
+<button class="w-7 h-7 rounded-full bg-gradient-to-tr from-primary-container to-secondary shadow-sm hover:scale-110 transition-transform" title="Gradiente Dual"></button>
+<button class="w-7 h-7 rounded-full bg-surface-container-lowest shadow-sm hover:scale-110 transition-transform flex items-center justify-center text-error" title="Sin relleno">
+<span class="material-symbols-outlined text-[14px]">format_color_reset</span>
+</button>
+</div>
+<!-- Opacidad del relleno -->
+<div class="space-y-1 pt-1">
+<div class="flex justify-between font-caption text-caption text-on-surface-variant">
+<span>Opacidad de relleno</span>
+<span id="opacity-label">85%</span>
+</div>
+<input class="w-full h-1.5 bg-surface-variant rounded-lg appearance-none cursor-pointer accent-primary" id="opacity-slider" max="100" min="0" type="range" value="85"/>
+</div>
+</div>
+<!-- Trazo y Borde -->
+<div class="space-y-3 pt-2">
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold block">Trazo y Contorno</label>
+<!-- Grosor -->
+<div class="grid grid-cols-4 gap-2">
+<button class="py-1.5 rounded bg-surface-variant hover:bg-surface-bright text-on-surface font-caption text-caption font-semibold">1px</button>
+<button class="py-1.5 rounded bg-primary-container text-on-primary-container font-caption text-caption font-semibold shadow-sm">2px</button>
+<button class="py-1.5 rounded bg-surface-variant hover:bg-surface-bright text-on-surface font-caption text-caption font-semibold">4px</button>
+<button class="py-1.5 rounded bg-surface-variant hover:bg-surface-bright text-on-surface font-caption text-caption font-semibold">8px</button>
+</div>
+<!-- Estilo de Trazo -->
+<div class="grid grid-cols-3 gap-2 pt-1">
+<button class="py-1.5 px-2 rounded bg-surface-container-high text-primary font-caption text-caption flex items-center justify-center gap-1">
+<span class="w-4 h-0.5 bg-primary"></span>
+<span>Continuo</span>
+</button>
+<button class="py-1.5 px-2 rounded bg-surface-variant hover:bg-surface-bright text-on-surface-variant font-caption text-caption flex items-center justify-center gap-1">
+<span class="w-4 h-0.5 border-b border-dashed border-on-surface-variant"></span>
+<span>Guiones</span>
+</button>
+<button class="py-1.5 px-2 rounded bg-surface-variant hover:bg-surface-bright text-on-surface-variant font-caption text-caption flex items-center justify-center gap-1">
+<span class="w-4 h-0.5 border-b border-dotted border-on-surface-variant"></span>
+<span>Puntos</span>
+</button>
+</div>
+</div>
+<!-- Modificadores & Efectos -->
+<div class="space-y-4 pt-2">
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold block">Efectos &amp; Esquinas</label>
+<div class="space-y-1">
+<div class="flex justify-between font-caption text-caption text-on-surface-variant">
+<span>Radio de Esquinas</span>
+<span>12 px</span>
+</div>
+<input class="w-full h-1.5 bg-surface-variant rounded-lg appearance-none cursor-pointer accent-primary" max="48" min="0" type="range" value="12"/>
+</div>
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-high">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">blur_on</span>
+<span class="font-label-md text-label-md text-on-surface">Sombra Suave (Drop Shadow)</span>
+</div>
+<input checked="" class="w-4 h-4 rounded bg-surface-variant accent-primary cursor-pointer" type="checkbox"/>
+</div>
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-high">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">aspect_ratio</span>
+<span class="font-label-md text-label-md text-on-surface">Bloquear Relación de Aspecto</span>
+</div>
+<input checked="" class="w-4 h-4 rounded bg-surface-variant accent-primary cursor-pointer" type="checkbox"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal Action Footer -->
+<div class="px-6 py-4 bg-surface-container-high flex items-center justify-between">
+<div class="flex items-center gap-2 text-outline font-caption text-caption">
+<span class="material-symbols-outlined text-[16px] text-tertiary">info</span>
+<span>El objeto se insertará en las coordenadas centrales de la vista actual</span>
+</div>
+<div class="flex items-center gap-3">
+<button class="px-4 py-2 rounded-lg bg-surface-container hover:bg-surface-variant text-on-surface font-label-md text-label-md transition-colors shadow-sm">
+            Cancelar
+          </button>
+<button class="px-5 py-2 rounded-lg bg-primary-container hover:bg-primary-container/90 text-on-primary-container font-label-md text-label-md font-semibold flex items-center gap-2 shadow-md transition-all active:scale-95">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Insertar en el Documento</span>
+</button>
+</div>
+</div>
+</div>
+<!-- TOAST ERGONÓMICO EN ESQUINA INFERIOR DERECHA -->
+<div class="fixed bottom-12 right-6 z-40 max-w-sm rounded-lg bg-surface-container-high text-on-surface shadow-2xl p-3.5 flex items-center gap-3 animate-bounce-subtle">
+<div class="w-7 h-7 rounded bg-primary-container text-on-primary-container flex items-center justify-center flex-shrink-0">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24">
+<path d="M12 4v16m-8-8h16"></path>
+</svg>
+</div>
+<div class="flex-1 pr-2">
+<p class="font-label-md text-label-md font-medium text-on-surface">Proporción Restringida</p>
+<p class="font-caption text-caption text-on-surface-variant">Mantén presionada la tecla <kbd class="px-1.5 py-0.5 rounded bg-surface-variant text-primary font-mono text-[10px]">Shift</kbd> mientras arrastras para preservar la relación 1:1.</p>
+</div>
+<button class="text-outline hover:text-on-surface transition-colors p-1" title="Descartar consejo">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  // Micro-interacción: Slider interactivo de lados de polígono
+  const sidesSlider = document.getElementById('sides-slider');
+  const sidesDisplay = document.getElementById('sides-display');
+  const polygonPreview = document.getElementById('polygon-preview');
+  const opacitySlider = document.getElementById('opacity-slider');
+  const opacityLabel = document.getElementById('opacity-label');
+
+  if (sidesSlider && sidesDisplay && polygonPreview) {
+    sidesSlider.addEventListener('input', (e) => {
+      const n = parseInt(e.target.value, 10);
+      sidesDisplay.textContent = n;
+
+      // Calcular vértices regulares para polígono regular centrado en (24, 24) radio 18
+      const cx = 24, cy = 24, r = 18;
+      const points = [];
+      for (let i = 0; i < n; i++) {
+        const angle = (i * 2 * Math.PI / n) - (Math.PI / 2);
+        const x = (cx + r * Math.cos(angle)).toFixed(1);
+        const y = (cy + r * Math.sin(angle)).toFixed(1);
+        points.push(`${x},${y}`);
+      }
+      polygonPreview.innerHTML = `<polygon points="${points.join(' ')}" fill="currentColor" fill-opacity="0.2" />`;
+    });
+  }
+
+  if (opacitySlider && opacityLabel) {
+    opacitySlider.addEventListener('input', (e) => {
+      opacityLabel.textContent = `${e.target.value}%`;
+    });
+  }
+
+  // Selección de cartas de forma
+  const shapeCards = document.querySelectorAll('.shape-card');
+  shapeCards.forEach(card => {
+    card.addEventListener('click', () => {
+      shapeCards.forEach(c => {
+        c.classList.remove('ring-2', 'ring-primary');
+        const icon = c.querySelector('svg');
+        if (icon) {
+          icon.classList.remove('text-primary');
+          icon.classList.add('text-on-surface-variant');
+        }
+      });
+      card.classList.add('ring-2', 'ring-primary');
+      const activeIcon = card.querySelector('svg');
+      if (activeIcon) {
+        activeIcon.classList.remove('text-on-surface-variant');
+        activeIcon.classList.add('text-primary');
+      }
+    });
+  });
+
+  // Switch de Tabs
+  const tabButtons = document.querySelectorAll('.tab-button');
+  tabButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      tabButtons.forEach(b => {
+        b.classList.remove('bg-surface-container', 'text-primary', 'font-semibold', 'shadow-sm');
+        b.classList.add('text-on-surface-variant');
+      });
+      btn.classList.add('bg-surface-container', 'text-primary', 'font-semibold', 'shadow-sm');
+      btn.classList.remove('text-on-surface-variant');
+    });
+  });
+</script></main></div><footer class="fixed bottom-0 left-0 right-0 h-7 bg-surface-container-lowest z-50 px-margin flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm shadow-[0_-1px_6px_rgba(0,0,0,0.3)]"><div class="flex items-center gap-space-lg"><span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[14px]">menu_book</span><span>Página 1 de 4</span></span><span class="h-3 w-[1px] bg-surface-variant"></span><span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[14px]">format_align_left</span><span>1,420 palabras</span></span><span class="h-3 w-[1px] bg-surface-variant"></span><span class="flex items-center gap-1 text-primary"><span class="material-symbols-outlined text-[14px]">lock</span><span>WASM Encrypted (AES-GCM 256)</span></span></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-1"><button class="w-5 h-5 flex items-center justify-center hover:text-on-surface" title="Modo Lectura"><span class="material-symbols-outlined text-[14px]">chrome_reader_mode</span></button><button class="w-5 h-5 flex items-center justify-center text-on-surface" title="Diseño de Impresión"><span class="material-symbols-outlined text-[14px]">print</span></button><button class="w-5 h-5 flex items-center justify-center hover:text-on-surface" title="Diseño Web"><span class="material-symbols-outlined text-[14px]">web</span></button></div><span class="h-3 w-[1px] bg-surface-variant"></span><div class="flex items-center gap-2"><button class="w-5 h-5 flex items-center justify-center hover:text-on-surface"><span class="material-symbols-outlined text-[14px]">remove</span></button><div class="w-24 h-1 bg-surface-variant rounded-full overflow-hidden flex items-center"><div class="w-1/2 h-full bg-primary rounded-full"></div></div><button class="w-5 h-5 flex items-center justify-center hover:text-on-surface"><span class="material-symbols-outlined text-[14px]">add</span></button><span class="w-10 text-right font-caption text-caption">100%</span></div></div></footer></body></html>

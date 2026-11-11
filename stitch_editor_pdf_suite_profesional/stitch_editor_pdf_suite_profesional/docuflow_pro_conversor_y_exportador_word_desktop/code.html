@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container":"#171f33","primary-fixed":"#dbe1ff","error-container":"#93000a","on-secondary-fixed":"#25005a","surface-variant":"#2d3449","surface-bright":"#31394d","surface-container-low":"#131b2e","on-tertiary-fixed-variant":"#653e00","inverse-on-surface":"#283044","on-tertiary-container":"#ffeedd","background":"#0b1326","on-secondary-fixed-variant":"#5a00c6","surface-container-lowest":"#060e20","primary-fixed-dim":"#b4c5ff","inverse-primary":"#0053db","secondary-container":"#6001d1","primary":"#b4c5ff","inverse-surface":"#dae2fd","on-secondary":"#3f008e","on-background":"#dae2fd","surface-dim":"#0b1326","tertiary":"#ffb95f","secondary-fixed-dim":"#d2bbff","tertiary-container":"#996100","surface-container-high":"#222a3d","secondary":"#d2bbff","on-surface":"#dae2fd","on-tertiary-fixed":"#2a1700","surface-tint":"#b4c5ff","on-error":"#690005","on-primary":"#002a78","tertiary-fixed":"#ffddb8","error":"#ffb4ab","secondary-fixed":"#eaddff","on-secondary-container":"#c9aeff","tertiary-fixed-dim":"#ffb95f","surface-container-highest":"#2d3449","on-primary-fixed-variant":"#003ea8","on-error-container":"#ffdad6","on-tertiary":"#472a00","on-primary-fixed":"#00174b","outline-variant":"#434655","outline":"#8d90a0","primary-container":"#2563eb","surface":"#0b1326","on-primary-container":"#eeefff","on-surface-variant":"#c3c6d7"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"0.75rem","gutter-tablet":"1rem","space-md":"0.75rem","space-xl":"1.5rem","space-lg":"1rem","margin-tablet":"1.5rem","margin":"1rem","space-xs":"0.25rem","space-sm":"0.5rem"},"fontFamily":{"body-sm":["Inter"],"body-lg":["Inter"],"headline-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"label-lg":["Inter"],"label-sm":["Inter"],"caption":["Inter"],"body-md":["Inter"],"headline-md":["Plus Jakarta Sans"],"label-md":["Inter"]},"fontSize":{"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"display-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"500"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"600"}],"caption":["10px",{"lineHeight":"12px","letterSpacing":"0.04em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}]}}}};</script></head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased select-none"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.3)]"><div class="h-14 px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md min-w-[260px]"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-container shadow-[0_2px_8px_rgba(0,0,0,0.4)]"><span class="material-symbols-outlined text-[20px]">description</span></div><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-bold">DocuFlow<span class="text-primary font-normal ml-0.5">Pro</span></span></div><span class="px-space-xs py-0.5 rounded bg-surface-variant text-on-surface-variant font-caption text-caption uppercase tracking-wider font-semibold">Enterprise v4.2</span><div class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px] text-primary">cloud_done</span><span>Sincronizado</span></div></div><div class="flex-1 max-w-xl"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px] pointer-events-none">search</span><input class="w-full h-9 pl-9 pr-14 rounded-lg bg-surface-container-highest text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm outline-none focus:ring-1 focus:ring-primary shadow-inner" placeholder="Buscar herramientas, textos, comandos... (Alt+Q)" type="text"/><kbd class="absolute right-3 px-1.5 py-0.5 rounded bg-surface-variant font-caption text-caption text-on-surface-variant">Alt+Q</kbd></div></div><div class="flex items-center gap-space-sm min-w-[260px] justify-end"><div class="flex items-center bg-surface-container rounded-lg p-0.5"><button class="w-7 h-7 flex items-center justify-center rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-variant transition-colors" title="Deshacer"><span class="material-symbols-outlined text-[18px]">undo</span></button><button class="w-7 h-7 flex items-center justify-center rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-variant transition-colors" title="Rehacer"><span class="material-symbols-outlined text-[18px]">redo</span></button></div><button class="w-8 h-8 flex items-center justify-center rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-variant transition-colors" title="Alternar tema"><span class="material-symbols-outlined text-[18px]">dark_mode</span></button><button class="flex items-center gap-1.5 h-8 px-space-md rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md hover:bg-primary-container/90 transition-colors shadow-sm"><span class="material-symbols-outlined text-[16px]">ios_share</span><span>Exportar</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><nav class="h-10 px-margin flex items-center gap-space-xs bg-surface-container-lowest overflow-x-auto shadow-[0_1px_4px_rgba(0,0,0,0.2)]" data-active-classes="bg-surface-container-highest text-primary font-semibold border-b-2 border-primary"><a class="px-space-md h-full flex items-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="editor-de-documento" href="#">Inicio</a><a class="px-space-md h-full flex items-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="insertar" href="#">Insertar</a><a class="px-space-md h-full flex items-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="dibujar-y-formas" href="#">Dibujar y Formas</a><a class="px-space-md h-full flex items-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="herramientas-pdf" href="#">Organizar &amp; Herramientas PDF</a><a aria-current="page" class="px-space-md h-full flex items-center transition-colors whitespace-nowrap bg-surface-container-highest text-primary font-semibold border-b-2 border-primary" data-path="conversor-a-word" href="#">Conversor &amp; Exportar</a><a class="px-space-md h-full flex items-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="revision" href="#">Revisión</a><a class="px-space-md h-full flex items-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="vista" href="#">Vista</a></nav></header><aside class="fixed left-0 top-24 bottom-7 w-64 bg-surface-container-low z-40 flex flex-col p-space-sm shadow-[1px_0_8px_rgba(0,0,0,0.25)]"><div class="px-space-md py-space-sm font-label-sm text-label-sm uppercase tracking-wider text-outline">Espacio de Trabajo</div><nav class="flex-1 flex flex-col gap-1 overflow-y-auto" data-active-classes="bg-surface-container-high text-primary font-semibold"><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="editor-de-documento" href="#"><span class="material-symbols-outlined text-[20px]">edit_document</span><span class="font-label-md text-label-md truncate">Editor de Documento</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="herramientas-pdf" href="#"><span class="material-symbols-outlined text-[20px]">splitscreen</span><span class="font-label-md text-label-md truncate">Herramientas PDF</span></a><a aria-current="page" class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg transition-all bg-surface-container-high text-primary font-semibold" data-path="conversor-a-word" href="#"><span class="material-symbols-outlined text-[20px]">transform</span><span class="font-label-md text-label-md truncate">Conversor Multi-formato</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="miniaturas-y-esquema" href="#"><span class="material-symbols-outlined text-[20px]">view_sidebar</span><span class="font-label-md text-label-md truncate">Miniaturas y Esquema</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="biblioteca-de-recursos" href="#"><span class="material-symbols-outlined text-[20px]">folder_copy</span><span class="font-label-md text-label-md truncate">Biblioteca de Recursos</span></a></nav><div class="mt-auto p-space-sm bg-surface-container rounded-lg flex items-center justify-between text-on-surface-variant"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-tertiary">shield_lock</span><span class="font-caption text-caption">Sandbox Aislado</span></div><span class="font-caption text-caption uppercase text-outline">WASM</span></div></aside><div class="pl-64"><main class="relative pt-24 pb-7 min-h-screen bg-surface w-full px-margin"><div class="flex flex-col w-full pb-16">
+<!-- Top Utility Ribbon & Engine Indicator -->
+<div class="flex flex-wrap items-center justify-between gap-space-md py-space-sm mb-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[24px]">swap_horizontal_circle</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Conversor Multi-formato</span>
+<span class="px-space-xs py-0.5 rounded bg-primary-container/20 text-primary font-caption text-caption uppercase tracking-wider font-semibold">Motor WASM v4.2</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Reconstrucción semántica de documentos sin fugas de datos externos</p>
+</div>
+</div>
+<!-- Engine Benchmark Capsule -->
+<div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-xs rounded-xl shadow-inner">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface">LibreOffice Core + TipTap WASM</span>
+</div>
+<span class="h-3 w-[1px] bg-surface-variant"></span>
+<button class="font-label-sm text-label-sm text-primary hover:text-primary-fixed transition-colors flex items-center gap-1 cursor-pointer" id="open-engine-specs-btn">
+<span>Especificaciones</span>
+<span class="material-symbols-outlined text-[14px]">tune</span>
+</button>
+</div>
+</div>
+<!-- Primary Two-Column Cockpit -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Left Column: PDF to Word / Multi-Format Export (7 Cols) -->
+<section class="lg:col-span-7 flex flex-col gap-space-lg">
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">file_export</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Exportar PDF a Formatos Editables</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Documento Activo: Balance_Anual_2024.pdf</span>
+</div>
+<!-- Format Matrix Tabs -->
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-space-sm">SELECCIONAR FORMATO DE DESTINO</label>
+<div class="grid grid-cols-5 gap-space-sm" id="format-selection-group">
+<!-- Word Option (Active) -->
+<button class="format-card relative flex flex-col items-start p-space-md rounded-xl bg-surface-container-highest shadow-sm transition-all text-left" type="button">
+<span class="absolute top-2 right-2 px-1.5 py-0.5 rounded bg-primary-container text-on-primary-container font-caption text-caption font-semibold">Oficial</span>
+<div class="w-7 h-7 rounded-lg bg-primary-container/30 text-primary flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[18px]">description</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Word</span>
+<span class="font-caption text-caption text-primary">.docx</span>
+</button>
+<!-- Excel Option -->
+<button class="format-card relative flex flex-col items-start p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all text-left" type="button">
+<div class="w-7 h-7 rounded-lg bg-surface-variant text-on-surface-variant flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[18px]">table_view</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">Excel</span>
+<span class="font-caption text-caption text-on-surface-variant">.xlsx</span>
+</button>
+<!-- PowerPoint Option -->
+<button class="format-card relative flex flex-col items-start p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all text-left" type="button">
+<div class="w-7 h-7 rounded-lg bg-surface-variant text-on-surface-variant flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[18px]">slideshow</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">PowerPoint</span>
+<span class="font-caption text-caption text-on-surface-variant">.pptx</span>
+</button>
+<!-- Plain Text Option -->
+<button class="format-card relative flex flex-col items-start p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all text-left" type="button">
+<div class="w-7 h-7 rounded-lg bg-surface-variant text-on-surface-variant flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[18px]">match_case</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">Texto</span>
+<span class="font-caption text-caption text-on-surface-variant">.txt / .md</span>
+</button>
+<!-- Image Asset Package Option -->
+<button class="format-card relative flex flex-col items-start p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all text-left" type="button">
+<div class="w-7 h-7 rounded-lg bg-surface-variant text-on-surface-variant flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[18px]">photo_library</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">Imágenes</span>
+<span class="font-caption text-caption text-on-surface-variant">.png / .jpg</span>
+</button>
+</div>
+</div>
+<!-- Conversion Reconstruction Engine Architecture Panel -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Modo de Reconstrucción Tipográfica Word</span>
+<span class="font-caption text-caption text-tertiary">Algoritmo Heurístico v3</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Mode A: Continuous Flow (Selected) -->
+<label class="engine-mode cursor-pointer relative flex flex-col p-space-md rounded-xl bg-surface-container-high shadow-sm transition-all">
+<input checked="" class="sr-only" name="conversion_flow_mode" type="radio" value="flow"/>
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">reorder</span>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">Flujo Continuo</span>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-primary-container text-on-primary-container font-caption text-caption font-semibold">Recomendado</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+                Crea párrafos nativos editables, tablas fluidas, columnas dinámicas y saltos lógicos de página.
+              </p>
+<div class="mt-auto flex items-center gap-space-xs font-caption text-caption text-primary">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>Óptimo para redacción, contratos y tesis</span>
+</div>
+</label>
+<!-- Mode B: Fixed Frames Pixel Perfect -->
+<label class="engine-mode cursor-pointer relative flex flex-col p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all">
+<input class="sr-only" name="conversion_flow_mode" type="radio" value="fixed"/>
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-outline text-[20px]">space_dashboard</span>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">Cuadros Exactos</span>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-surface-variant text-on-surface-variant font-caption text-caption">Pixel-Perfect</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+                Posicionamiento absoluto de marcos de texto individuales conservando coordenadas milimétricas.
+              </p>
+<div class="mt-auto flex items-center gap-space-xs font-caption text-caption text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>Ideal para folletos, catálogos e infografías fijas</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Advanced Fidelity & OCR Switchboard -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Ajustes Avanzados de Compatibilidad</span>
+<!-- Option 1: Fonts -->
+<div class="flex items-center justify-between py-1">
+<div class="flex items-start gap-space-sm max-w-md">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] mt-0.5">font_download</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">Reemplazar tipografías no instaladas</span>
+<span class="font-caption text-caption text-on-surface-variant">Mapea fuentes incrustadas a familias seguras: Calibri / Plus Jakarta Sans.</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<!-- Option 2: Table of Contents -->
+<div class="flex items-center justify-between py-1">
+<div class="flex items-start gap-space-sm max-w-md">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] mt-0.5">format_list_numbered</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">Generar Tabla de Contenidos nativa</span>
+<span class="font-caption text-caption text-on-surface-variant">Detecta estilos de encabezado (H1-H4) e inserta un campo TOC editable en Word.</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<!-- Option 3: Neural OCR & Language Selector -->
+<div class="flex flex-col gap-space-sm pt-2 bg-surface-container-high/40 p-space-sm rounded-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-start gap-space-sm max-w-md">
+<span class="material-symbols-outlined text-tertiary text-[18px] mt-0.5">document_scanner</span>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface">Activar OCR Neuronal WASM</span>
+<span class="px-1.5 py-0.2 rounded bg-tertiary-container text-on-tertiary-container font-caption text-caption uppercase font-semibold">Tesseract 5.3</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">Reconocimiento óptico para páginas escaneadas y texto rasterizado.</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="ocr-toggle" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<div class="flex items-center justify-between pl-7 pr-1 mt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Diccionario Primario OCR:</span>
+<div class="relative">
+<select class="bg-surface-container-highest text-on-surface text-label-sm font-label-sm rounded-lg pl-3 pr-8 py-1.5 outline-none focus:ring-1 focus:ring-primary appearance-none cursor-pointer">
+<option selected="">Español (Latinoamérica / España)</option>
+<option>Inglés (US / UK Corporativo)</option>
+<option>Francés (Estándar)</option>
+<option>Alemán (Deutsches Wörterbuch)</option>
+</select>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant absolute right-2 top-2 pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Export Initiation Button -->
+<div class="pt-space-xs flex items-center gap-space-md">
+<button class="flex-1 flex items-center justify-center gap-space-sm h-11 px-space-lg rounded-xl bg-primary-container text-on-primary-container font-label-lg text-label-lg font-semibold hover:bg-primary-container/90 active:scale-[0.98] transition-all shadow-md" id="start-conversion-btn">
+<span class="material-symbols-outlined text-[20px]">download</span>
+<span>Iniciar Conversión y Descargar DOCX</span>
+</button>
+<button class="h-11 px-space-md rounded-xl bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors flex items-center justify-center" title="Guardar Ajustes Predefinidos">
+<span class="material-symbols-outlined text-[20px]">bookmark</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Right Column: Universal Intake & Real-Time Queue (5 Cols) -->
+<section class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Universal Ingestion Drag & Drop Zone -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">picture_as_pdf</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Crear PDF desde Cualquier Archivo</span>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-primary" title="Entorno listo"></span>
+</div>
+<!-- Drop Matrix -->
+<div class="relative group cursor-pointer bg-surface-container hover:bg-surface-container-high/70 transition-all rounded-xl p-space-xl flex flex-col items-center justify-center text-center" id="dropzone">
+<div class="w-16 h-16 rounded-2xl bg-surface-container-highest group-hover:bg-primary-container/20 group-hover:text-primary transition-all flex items-center justify-center text-on-surface-variant mb-space-md shadow-inner">
+<svg class="w-8 h-8 transition-transform group-hover:-translate-y-1 duration-200" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewbox="0 0 24 24">
+<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+<polyline points="17 8 12 3 7 8"></polyline>
+<line x1="12" x2="12" y1="3" y2="15"></line>
+</svg>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface mb-1">Arrastra archivos aquí o explora el equipo</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs mb-space-md">
+            Conversión instantánea a PDF/A con retención vectorial y compresión adaptativa.
+          </p>
+<!-- Badges for Supported File Formats -->
+<div class="flex flex-wrap items-center justify-center gap-1.5 max-w-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-caption text-caption uppercase font-semibold">DOCX</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-caption text-caption uppercase font-semibold">XLSX</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-caption text-caption uppercase font-semibold">PPTX</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-caption text-caption uppercase font-semibold">TIFF</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-caption text-caption uppercase font-semibold">JPG</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-caption text-caption uppercase font-semibold">EPUB</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-caption text-caption uppercase font-semibold">CAD (DXF)</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-caption text-caption uppercase font-semibold">Markdown</span>
+</div>
+<input class="absolute inset-0 opacity-0 cursor-pointer" multiple="" type="file"/>
+</div>
+</div>
+<!-- Real-Time Conversion Queue List -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md flex-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[18px]">history</span>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Cola de Conversiones Recientes</span>
+</div>
+<button class="font-caption text-caption text-primary hover:text-primary-fixed uppercase tracking-wider">Limpiar</button>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Item 1: In Progress -->
+<div class="bg-surface-container rounded-lg p-space-md flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded bg-surface-variant flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">calculate</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-md text-label-md text-on-surface block truncate">Matriz_Costos_Q3.xlsx</span>
+<span class="font-caption text-caption text-on-surface-variant">A PDF/A-2b • 4.8 MB</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary-container/30 text-primary font-caption text-caption font-semibold shrink-0">Procesando 68%</span>
+</div>
+<!-- Progress Line -->
+<div class="w-full h-1.5 bg-surface-variant rounded-full overflow-hidden mt-1">
+<div class="w-[68%] h-full bg-primary rounded-full transition-all duration-300"></div>
+</div>
+</div>
+<!-- Item 2: Ready for Word Download -->
+<div class="bg-surface-container rounded-lg p-space-md flex items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded bg-surface-variant flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[18px]">gavel</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-md text-label-md text-on-surface block truncate">Contrato_Servicios_TechCorp.pdf</span>
+<span class="font-caption text-caption text-on-surface-variant">A DOCX (Flujo Continuo) • 1.2 MB</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 shrink-0">
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-sm text-label-sm transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">edit_note</span>
+<span>Abrir en DocuFlow</span>
+</button>
+<button class="w-7 h-7 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center hover:bg-primary-container/80 transition-colors" title="Descargar Word">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+</button>
+</div>
+</div>
+<!-- Item 3: Finished OCR Markdown -->
+<div class="bg-surface-container rounded-lg p-space-md flex items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded bg-surface-variant flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-md text-label-md text-on-surface block truncate">Factura_Escaneada_Octubre.png</span>
+<span class="font-caption text-caption text-on-surface-variant">A PDF con OCR Neuronal • 840 KB</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 shrink-0">
+<span class="px-2 py-0.5 rounded bg-surface-variant text-primary font-caption text-caption font-semibold">Listo</span>
+<button class="w-7 h-7 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface flex items-center justify-center transition-colors" title="Descargar">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Interactive Slide-Over Drawer: Engine Specifications (TipTap + LibreOffice WASM) -->
+<div class="fixed inset-0 z-50 pointer-events-none transition-all duration-300 opacity-0" id="engine-specs-modal">
+<!-- Backdrop Scrim -->
+<div class="absolute inset-0 bg-surface-container-lowest/70 backdrop-blur-md transition-opacity" id="specs-scrim"></div>
+<!-- Side Sheet -->
+<div class="absolute right-0 top-0 bottom-0 w-full max-w-lg bg-surface-container-low p-space-xl shadow-[0_0_24px_rgba(0,0,0,0.6)] flex flex-col justify-between overflow-y-auto pointer-events-auto transform translate-x-full transition-transform duration-300 ease-out" id="specs-panel">
+<div class="flex flex-col gap-space-lg">
+<!-- Sheet Header -->
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">memory</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface block">Especificaciones del Motor</span>
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Aislamiento Sandbox Local</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-variant text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" id="close-engine-specs-btn">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Spec Item 1: LibreOffice WASM Core -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">LibreOffice WebAssembly Core v7.6</span>
+<span class="px-2 py-0.5 rounded bg-primary-container/20 text-primary font-caption text-caption">Compilado C++</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Ejecución del pipeline completo de renderizado de LibreOffice directamente en los hilos web del explorador del cliente, permitiendo la preservación del 100% de la jerarquía OpenXML (Word/Excel/PowerPoint).
+          </p>
+<div class="grid grid-cols-2 gap-space-xs pt-space-xs">
+<div class="bg-surface-container-high p-space-xs rounded font-caption text-caption text-on-surface-variant">
+<span class="text-outline block">Tiempo Promedio</span>
+<span class="text-on-surface font-semibold">180ms / página</span>
+</div>
+<div class="bg-surface-container-high p-space-xs rounded font-caption text-caption text-on-surface-variant">
+<span class="text-outline block">Consumo de RAM</span>
+<span class="text-on-surface font-semibold">42 MB en reposo</span>
+</div>
+</div>
+</div>
+<!-- Spec Item 2: TipTap Schema Pipeline -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">TipTap Prosemirror Architecture</span>
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-caption text-caption">Headless Node Tree</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Transformación bidireccional entre la estructura basada en páginas del PDF y el árbol abstracto de documentos TipTap. Reinterpreta cajas de texto desconectadas en bloques fluidos con alineación de sangría matemática.
+          </p>
+<ul class="flex flex-col gap-1 font-caption text-caption text-on-surface-variant pt-1">
+<li class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[14px]">done</span>
+<span>Reconciliación semántica de tablas con celdas anidadas</span>
+</li>
+<li class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[14px]">done</span>
+<span>Soporte completo de notas al pie y anotaciones al margen</span>
+</li>
+</ul>
+</div>
+<!-- Spec Item 3: Zero Data Leakage -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px]">verified_user</span>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">Privacidad Cero-Conocimiento</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Ningún byte de sus documentos viaja a servidores en la nube. Las conversiones ocurren exclusivamente en la memoria volátil de su procesador local (WebAssembly + SIMD).
+          </p>
+</div>
+</div>
+<!-- Footer Action -->
+<div class="pt-space-lg flex justify-end">
+<button class="h-9 px-space-lg rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-md text-label-md transition-colors" id="close-specs-action-btn">
+          Cerrar Panel
+        </button>
+</div>
+</div>
+</div>
+<!-- Interactive Floating Status Toast (Initially Visible for Feedback Demo) -->
+<div class="fixed bottom-12 right-6 z-40 max-w-md bg-surface-container-high rounded-xl p-space-md shadow-xl flex items-center justify-between gap-space-md transform transition-all duration-300" id="conversion-toast">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-2.5 h-2.5 rounded-full bg-emerald-400 shrink-0"></div>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface block truncate font-semibold">Motor Listo para Exportación</span>
+<span class="font-caption text-caption text-on-surface-variant">TipTap Core v4 enlazado localmente</span>
+</div>
+</div>
+<button class="font-label-sm text-label-sm text-primary uppercase font-semibold hover:text-primary-fixed shrink-0" id="dismiss-toast">
+      ENTENDIDO
+    </button>
+</div>
+</div>
+<script>
+  // Script for Micro-Interactions (Format selection, modal drawer, toast dismissal)
+  (function initConverterUI() {
+    // 1. Format Selection Matrix
+    const formatCards = document.querySelectorAll('.format-card');
+    formatCards.forEach(card => {
+      card.addEventListener('click', () => {
+        formatCards.forEach(c => {
+          c.classList.remove('bg-surface-container-highest', 'shadow-sm');
+          c.classList.add('bg-surface-container');
+        });
+        card.classList.remove('bg-surface-container');
+        card.classList.add('bg-surface-container-highest', 'shadow-sm');
+      });
+    });
+
+    // 2. Reconstruction Engine Mode Radio Selection Styling
+    const modeCards = document.querySelectorAll('.engine-mode');
+    modeCards.forEach(label => {
+      const radio = label.querySelector('input[type="radio"]');
+      label.addEventListener('click', () => {
+        modeCards.forEach(l => {
+          l.classList.remove('bg-surface-container-high', 'shadow-sm');
+          l.classList.add('bg-surface-container');
+        });
+        label.classList.remove('bg-surface-container');
+        label.classList.add('bg-surface-container-high', 'shadow-sm');
+      });
+    });
+
+    // 3. Side Drawer / Engine Specs Modal
+    const modal = document.getElementById('engine-specs-modal');
+    const panel = document.getElementById('specs-panel');
+    const openBtn = document.getElementById('open-engine-specs-btn');
+    const closeBtn = document.getElementById('close-engine-specs-btn');
+    const closeActionBtn = document.getElementById('close-specs-action-btn');
+    const scrim = document.getElementById('specs-scrim');
+
+    function toggleSpecs(open) {
+      if (open) {
+        modal.classList.remove('pointer-events-none', 'opacity-0');
+        modal.classList.add('pointer-events-auto', 'opacity-100');
+        panel.classList.remove('translate-x-full');
+        panel.classList.add('translate-x-0');
+      } else {
+        panel.classList.remove('translate-x-0');
+        panel.classList.add('translate-x-full');
+        modal.classList.remove('opacity-100');
+        modal.classList.add('opacity-0');
+        setTimeout(() => {
+          modal.classList.remove('pointer-events-auto');
+          modal.classList.add('pointer-events-none');
+        }, 300);
+      }
+    }
+
+    if (openBtn) openBtn.addEventListener('click', () => toggleSpecs(true));
+    if (closeBtn) closeBtn.addEventListener('click', () => toggleSpecs(false));
+    if (closeActionBtn) closeActionBtn.addEventListener('click', () => toggleSpecs(false));
+    if (scrim) scrim.addEventListener('click', () => toggleSpecs(false));
+
+    // 4. Toast Dismissal
+    const toast = document.getElementById('conversion-toast');
+    const dismissBtn = document.getElementById('dismiss-toast');
+    if (dismissBtn && toast) {
+      dismissBtn.addEventListener('click', () => {
+        toast.classList.add('translate-y-8', 'opacity-0');
+        setTimeout(() => toast.remove(), 300);
+      });
+    }
+
+    // 5. Simulate Start Conversion Action
+    const startBtn = document.getElementById('start-conversion-btn');
+    if (startBtn) {
+      startBtn.addEventListener('click', () => {
+        startBtn.classList.add('opacity-80', 'pointer-events-none');
+        startBtn.innerHTML = `
+          <span class="material-symbols-outlined text-[20px] animate-spin">progress_activity</span>
+          <span>Compilando AST a DOCX...</span>
+        `;
+        setTimeout(() => {
+          startBtn.classList.remove('opacity-80', 'pointer-events-none');
+          startBtn.innerHTML = `
+            <span class="material-symbols-outlined text-[20px]">check_circle</span>
+            <span>Descarga Completada</span>
+          `;
+          setTimeout(() => {
+            startBtn.innerHTML = `
+              <span class="material-symbols-outlined text-[20px]">download</span>
+              <span>Iniciar Conversión y Descargar DOCX</span>
+            `;
+          }, 2400);
+        }, 1800);
+      });
+    }
+  })();
+</script></main></div><footer class="fixed bottom-0 left-0 right-0 h-7 bg-surface-container-lowest z-50 px-margin flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm shadow-[0_-1px_6px_rgba(0,0,0,0.3)]"><div class="flex items-center gap-space-lg"><span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[14px]">menu_book</span><span>Página 1 de 4</span></span><span class="h-3 w-[1px] bg-surface-variant"></span><span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[14px]">format_align_left</span><span>1,420 palabras</span></span><span class="h-3 w-[1px] bg-surface-variant"></span><span class="flex items-center gap-1 text-primary"><span class="material-symbols-outlined text-[14px]">lock</span><span>WASM Encrypted (AES-GCM 256)</span></span></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-1"><button class="w-5 h-5 flex items-center justify-center hover:text-on-surface" title="Modo Lectura"><span class="material-symbols-outlined text-[14px]">chrome_reader_mode</span></button><button class="w-5 h-5 flex items-center justify-center text-on-surface" title="Diseño de Impresión"><span class="material-symbols-outlined text-[14px]">print</span></button><button class="w-5 h-5 flex items-center justify-center hover:text-on-surface" title="Diseño Web"><span class="material-symbols-outlined text-[14px]">web</span></button></div><span class="h-3 w-[1px] bg-surface-variant"></span><div class="flex items-center gap-2"><button class="w-5 h-5 flex items-center justify-center hover:text-on-surface"><span class="material-symbols-outlined text-[14px]">remove</span></button><div class="w-24 h-1 bg-surface-variant rounded-full overflow-hidden flex items-center"><div class="w-1/2 h-full bg-primary rounded-full"></div></div><button class="w-5 h-5 flex items-center justify-center hover:text-on-surface"><span class="material-symbols-outlined text-[14px]">add</span></button><span class="w-10 text-right font-caption text-caption">100%</span></div></div></footer></body></html>
